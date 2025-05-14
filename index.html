@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2e7d32" />
+  <title>Daily Work Count</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Daily Work Count</h1>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>તારીખ</th>
+          <th>ડેલી</th>
+          <th>કામ</th>
+          <th>ગૂગલ</th>
+          <th>કુલ કામ</th>
+          <th>ઉપાડ</th>
+          <th>જમા</th>
+          <th>ગૂગલ ખર્ચ</th>
+          <th>કુલ ખર્ચ</th>
+        </tr>
+      </thead>
+      <tbody id="ledgerBody">
+        <!-- Entries will appear here -->
+      </tbody>
+    </table>
+
+    <form id="entryForm">
+      <div class="form-row">
+        <input type="date" id="date" required />
+        <input type="number" id="dailyCollection" placeholder="ડેલી" required />
+        <input type="number" id="work" placeholder="કામ" required />
+        <input type="number" id="google" placeholder="ગૂગલ" required />
+        <input type="number" id="earned" placeholder="ઉપાડ" required />
+        <input type="text" id="googleExpense" placeholder="ગૂગલ ખર્ચ" />
+        <input type="number" id="totalExpense" placeholder="કુલ ખર્ચ" />
+        <button type="submit">Add Entry</button>
+      </div>
+    </form>
+
+    <button id="installBtn" style="display: none; margin-top: 1rem;">Install App</button>
+  </main>
+</body>
+</html>
